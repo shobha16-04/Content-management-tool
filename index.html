@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CONTENT MANAGEMENT TOOL</h1>
+        <h2>CONTENT</h2>
+        <form id="content-form">
+            <input type="text" id="title" name="title" placeholder="Enter Title" required>
+            <textarea id="text" name="text" placeholder="Enter Text" required></textarea>
+            <h2>Image:</h2>
+            <input type="file" id="image" name="image" accept="image/*">
+            <input type="text" id="image-url" name="image-url" placeholder="Image URL">
+            <h2>Video:</h2>
+            <input type="file" id="video" name="video" accept="video/*">
+            <input type="text" id="video-url" name="video-url" placeholder="Video URL">
+            <script src="https://www.youtube.com/iframe_api"></script>
+
+            <button type="submit">Create Post</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Preview</h2>
+        <div id="blog-preview"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
